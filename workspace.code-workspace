@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "..\\B32 WD English"
+		},
+		{
+			"path": "..\\B32 English"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "B32 English"
+	}
+}
