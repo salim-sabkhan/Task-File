@@ -1,14 +1,17 @@
-const getCountries = () => {
-    const xhr = new XMLHttpRequest();
-    xhr.open("GET", "https://restcountries.com/v3.1/all");
-    xhr.send();
-    xhr.responseType = "json";
-    xhr.onload = () => {
-        const countries = xhr.response;
-        console.log(countries);
-    };
-};
+var request=new XMLHttpRequest();
 
-getCountries();
+
+request.open("GET","https://raw.githubusercontent.com/rvsp/restcountries-json-data/master/res-countries.json");
+
+request.send();
+
+var result=JSON.parse(request.response);//object stored in result 
+ console.log(result);
+ console.log(result[0].name);
+for (var i=0; i<result.length;i++){
+    console.log(result[i].name + " "+ result[i].capital + " " + result[i].region +  " " + result[i].population);
+}
+}
+
 
 
